@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 900px;
+    background-color: #F7F7F7;
+    display: grid;
+    grid-template-areas: "streaming ads"
+                         "streaming related-video";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    gap: 20px;
+    padding: 30px 35px;
+    margin: 0 auto;
+}
+
+.info {
+    flex-direction: column;
+}
+
+.streaming {
+    grid-area: streaming;
+}
+
+.streaming h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.streaming h4 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.streaming p {
+    font-size: 16px;
+}
+
+.streaming .watching {
+    width: 100%;
+    background-color: #C4C4C4;
+}
+
+.ads {
+    grid-area: ads;
+}
+
+.related-video {
+    grid-area: related-video;
+}
+
+.streaming, .related-video  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.info , .related-video .video {
+    display: flex;
+    gap: 5px;
+}
+
+.thumb {
+    background-color: #C4C4C4;
+}
+
+.related-video .video .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.related-video h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.related-video h4 {
+    font-size: 11px;
+    font-weight: 300;
+}
